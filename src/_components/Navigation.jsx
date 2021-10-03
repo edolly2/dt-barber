@@ -30,17 +30,17 @@ const Navigation = () => {
   return (
     <NavContainer>
       <NavList>
-        <NavItem className="links">
+        <NavItem className="links" title="Home">
           <Link to="/" className="links">
             Home
           </Link>
         </NavItem>
-        <NavItem className="links">
+        <NavItem className="links" title="Our History">
           <Link to="/history" className="links">
             History
           </Link>
         </NavItem>
-        <NavItem className="links">
+        <NavItem className="links" title="Our Services">
           <Link to="/services" className="links">
             Services
           </Link>
@@ -48,21 +48,27 @@ const Navigation = () => {
       </NavList>
       <SiteBrand>
         <Link to="/">
-          <img src={Logo} alt="" />
+          <img
+            src={Logo}
+            alt=""
+            width="600px"
+            height="auto"
+            title="Hairitage Barbershop"
+          />
         </Link>
       </SiteBrand>
       <NavList>
-        <NavItem className="links">
+        <NavItem className="links" title="Our Team">
           <Link to="/our-team" className="links">
             Our Team
           </Link>
         </NavItem>
-        <NavItem className="links">
+        <NavItem className="links" title="Contact Us">
           <Link to="/contact" className="links">
             Contact
           </Link>
         </NavItem>
-        <NavItem className="links">
+        <NavItem className="links" title="Make an Appointment">
           <Link to="/appointment" className="links">
             Make an Appointment
           </Link>

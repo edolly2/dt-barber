@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import Razor from "../_assets/razor-crossed1.svg";
 
-const Wrapper = styled.div`
-  margin-top: 12rem;
-`;
-
 const Wrapper2 = styled.div`
   display: flex;
   padding: 0 3.2rem;
@@ -12,13 +8,12 @@ const Wrapper2 = styled.div`
 
 const Wrapper3 = styled.div`
   display: flex;
-  width: fit-content;
   padding: 1.6rem;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
 `;
 
 const MainContainer = styled.main`
@@ -27,22 +22,11 @@ const MainContainer = styled.main`
 `;
 
 const MainTitle = styled.h1`
-  font-size: 6rem;
-  text-align: center;
-`;
-
-const MainLocation = styled.p`
-  text-align: center;
-  font-size: 2.4rem;
-  color: red;
-`;
-
-const MainSlogan = styled.h2`
+  font-size: 4.8rem;
   text-align: center;
   align-items: center;
   width: 100%;
   display: flex;
-  font-size: 4.8rem;
   text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white,
     -1px 1px 1px white, 0 1px 1px white, 1px 0 1px white, 0 0 1px white,
     0 -1px 1px white, -1px 0 1px white, 3px 3px 1px red,
@@ -72,49 +56,53 @@ const MainSlogan = styled.h2`
   }
 `;
 
-const MainAddress = styled.p`
+const MainSlogan = styled.h2`
   text-align: center;
-  font-size: 2.4rem;
-  color: red;
-`;
-
-const MainNumber = styled.p`
-  text-align: center;
-  font-size: 2rem;
-  color: red;
+  font-size: 4.2rem;
+  font-weight: 400;
+  font-style: italic;
 `;
 
 const AppointmentBtn = styled.button`
   font-size: 2rem;
-  padding: 0.4rem 1.6rem;
+  padding: 1.6rem;
   background: url('data:image/svg+xml,\
   <svg xmlns="http://www.w3.org/2000/svg">\
   <style>@keyframes marching-ants {to {stroke-dashoffset: -15px;}}</style>\
   <rect width="100%" height="100%" style="stroke: yellow; stroke-width: 10px;\ fill: red; stroke-dasharray: 10px 5px; animation: marching-ants .4s\ 
   infinite linear;" /></svg>');
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.1, 1.1);
-  }
+  position: relative;
+  z-index: 3;
 `;
 
 const MainContent = () => {
   return (
     <MainContainer>
-      {/* <MainTitle>Hairitage Barbershop</MainTitle> */}
-      <MainLocation>-Omaha, Nebraska-</MainLocation>
       <Wrapper2>
-        <img src={Razor} alt="" className="razor" />
-        <MainSlogan>Because Salons Are For Girls</MainSlogan>
-        <img src={Razor} alt="" className="razor" />
+        <img
+          src={Razor}
+          alt=""
+          className="razor"
+          width="40px"
+          height="auto"
+          title="Straight Razor"
+        />
+        <MainTitle>Hairitage Barbershop</MainTitle>
+        <img
+          src={Razor}
+          alt=""
+          className="razor"
+          width="40px"
+          height="auto"
+          title="Straight Razor"
+        />
       </Wrapper2>
-      <Wrapper>
-        <Wrapper3>
-          <AppointmentBtn>Schedule Appointment Today</AppointmentBtn>
-        </Wrapper3>
-        <MainNumber>402-697-1700</MainNumber>
-        <MainAddress>1328 S 119th St.</MainAddress>
-      </Wrapper>
+      <Wrapper3>
+        <AppointmentBtn className="btn" title="Make an Appointment">
+          Schedule Appointment Today
+        </AppointmentBtn>
+      </Wrapper3>
+      <MainSlogan>Because Salons Are For Girls</MainSlogan>
     </MainContainer>
   );
 };

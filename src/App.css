@@ -11,7 +11,7 @@
   font-size: 4rem;
   color: white;
   cursor: pointer;
-  margin-bottom: 1.6rem;
+  /* margin-bottom: 1.6rem; */
 }
 
 .icons:hover {
@@ -21,6 +21,7 @@
 .razor {
   width: 4rem;
   height: auto;
+  pointer-events: none;
 }
 
 .links {
@@ -28,7 +29,13 @@
 }
 
 .links:hover {
-  transform: scale(1.1, 1.1); 
+  transform: scale(1.1, 1.1);
 }
 
+.btn {
+  cursor: pointer;
+}
 
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
