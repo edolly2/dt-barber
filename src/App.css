@@ -6,3 +6,29 @@
   min-width: 100vw;
   min-height: 100vh;
 }
+
+.icons {
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1.6rem;
+}
+
+.icons:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.razor {
+  width: 4rem;
+  height: auto;
+}
+
+.links {
+  color: red;
+}
+
+.links:hover {
+  transform: scale(1.1, 1.1); 
+}
+
+

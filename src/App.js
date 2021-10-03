@@ -2,7 +2,8 @@ import "./App.css";
 import styled from "styled-components";
 import Header from "./_components/Header";
 import MainContent from "./_components/MainContent";
-import MainBottom from "./_components/MainBottom";
+import MainBottom from "./_components/MainBottom.js";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const AppContent = styled.div`
   min-width: 100vw
@@ -18,14 +19,16 @@ const Overlay = styled.div`
 
 function App() {
   return (
-    <div className="App">
-      <Overlay />
-      <AppContent>
-        <Header />
-        <MainContent />
-        <MainBottom />
-      </AppContent>
-    </div>
+    <Router>
+      <div className="App">
+        <Overlay />
+        <AppContent>
+          <Header />
+          <MainContent />
+          <MainBottom />
+        </AppContent>
+      </div>
+    </Router>
   );
 }
 
