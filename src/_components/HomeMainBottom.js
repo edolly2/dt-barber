@@ -45,7 +45,7 @@ const MainNumber = styled.p`
   color: red;
 `;
 
-const MainBottom = () => {
+const HomeMainBottom = () => {
   return (
     <MainBottomContainer>
       <Hours />
@@ -63,4 +63,4 @@ const MainBottom = () => {
   );
 };
 
-export default MainBottom;
+export default HomeMainBottom;

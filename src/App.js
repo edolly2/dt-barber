@@ -1,9 +1,9 @@
 import "./App.css";
 import styled from "styled-components";
 import Header from "./_components/Header";
-import MainContent from "./_components/MainContent";
-import MainBottom from "./_components/MainBottom.js";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AboutUs from "./_pages/AboutUs";
+import HomePage from "./_pages/HomePage";
 
 const AppContent = styled.div`
   min-width: 100vw
@@ -24,8 +24,12 @@ function App() {
         <Overlay />
         <AppContent>
           <Header />
-          <MainContent />
-          <MainBottom />
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/history">
+            <AboutUs />
+          </Route>
         </AppContent>
       </div>
     </Router>

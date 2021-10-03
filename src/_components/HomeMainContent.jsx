@@ -1,10 +1,5 @@
 import styled from "styled-components";
-import Razor from "../_assets/razor-crossed1.svg";
-
-const Wrapper2 = styled.div`
-  display: flex;
-  padding: 0 3.2rem;
-`;
+import PageTitle from "./PageTitle";
 
 const Wrapper3 = styled.div`
   display: flex;
@@ -75,28 +70,10 @@ const AppointmentBtn = styled.button`
   z-index: 3;
 `;
 
-const MainContent = () => {
+const HomeMainContent = () => {
   return (
     <MainContainer>
-      <Wrapper2>
-        <img
-          src={Razor}
-          alt=""
-          className="razor"
-          width="40px"
-          height="auto"
-          title="Straight Razor"
-        />
-        <MainTitle>Hairitage Barbershop</MainTitle>
-        <img
-          src={Razor}
-          alt=""
-          className="razor"
-          width="40px"
-          height="auto"
-          title="Straight Razor"
-        />
-      </Wrapper2>
+      <PageTitle titleText="Hairitage Barbershop" />
       <Wrapper3>
         <AppointmentBtn className="btn" title="Make an Appointment">
           Schedule Appointment Today
@@ -107,4 +84,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default HomeMainContent;
