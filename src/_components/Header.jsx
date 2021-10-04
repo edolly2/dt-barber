@@ -5,7 +5,6 @@ const HeaderContainer = styled.header`
   width: 100%;
   display: flex;
   position: relative;
-  padding: 3.2rem 0;
   z-index: 1;
 `;
 

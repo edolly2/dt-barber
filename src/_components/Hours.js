@@ -4,6 +4,9 @@ const HoursContainer = styled.div`
   border: 2px solid white;
   text-align: center;
   padding: 0 1.6rem;
+  background: rgba(255, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  margin: 0 0 3.2rem 3.3rem;
 `;
 
 const HoursTitle = styled.h3`

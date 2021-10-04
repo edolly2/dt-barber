@@ -1,10 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
   background-image: url("./_assets/barberback.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .icons {
@@ -16,6 +21,178 @@
 
 .icons:hover {
   transform: scale(1.1, 1.1);
+}
+
+@keyframes btn {
+  0% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 1) 0 12.5%,
+      rgba(255, 255, 255, 1) 0 25%,
+      rgba(0, 4, 255, 1) 0 37.5%,
+      rgba(255, 255, 255, 1) 0 50%,
+      rgba(255, 0, 0, 1) 0 62.5%,
+      rgba(255, 255, 255, 1) 0 75%,
+      rgba(0, 4, 255, 1) 0 87.5%,
+      rgba(255, 255, 255, 1) 0
+    );
+  }
+  8% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 1) 0 12.5%,
+      rgba(255, 0, 0, 1) 0 25%,
+      rgba(255, 255, 255, 1) 0 37.5%,
+      rgba(0, 4, 255, 1) 0 50%,
+      rgba(255, 255, 255, 1) 0 62.5%,
+      rgba(255, 0, 0, 1) 0 75%,
+      rgba(255, 255, 255, 1) 0 87.5%,
+      rgba(0, 4, 255, 1) 0
+    );
+  }
+  16% {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 4, 255, 1) 0 12.5%,
+      rgba(255, 255, 255, 1) 0 25%,
+      rgba(255, 0, 0, 1) 0 37.5%,
+      rgba(255, 255, 255, 1) 0 50%,
+      rgba(0, 4, 255, 1) 0 62.5%,
+      rgba(255, 255, 255, 1) 0 75%,
+      rgba(255, 0, 0, 1) 0 87.5%,
+      rgba(255, 255, 255, 1) 0
+    );
+  }
+  24% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 1) 0 12.5%,
+      rgba(0, 4, 255, 1) 0 25%,
+      rgba(255, 255, 255, 1) 0 37.5%,
+      rgba(255, 0, 0, 1) 0 50%,
+      rgba(255, 255, 255, 1) 0 62.5%,
+      rgba(0, 4, 255, 1) 0 75%,
+      rgba(255, 255, 255, 1) 0 87.5%,
+      rgba(255, 0, 0, 1) 0
+    );
+  }
+  32% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 1) 0 12.5%,
+      rgba(255, 255, 255, 1) 0 25%,
+      rgba(0, 4, 255, 1) 0 37.5%,
+      rgba(255, 255, 255, 1) 0 50%,
+      rgba(255, 0, 0, 1) 0 62.5%,
+      rgba(255, 255, 255, 1) 0 75%,
+      rgba(0, 4, 255, 1) 0 87.5%,
+      rgba(255, 255, 255, 1) 0
+    );
+  }
+  40% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 1) 0 12.5%,
+      rgba(255, 0, 0, 1) 0 25%,
+      rgba(255, 255, 255, 1) 0 37.5%,
+      rgba(0, 4, 255, 1) 0 50%,
+      rgba(255, 255, 255, 1) 0 62.5%,
+      rgba(255, 0, 0, 1) 0 75%,
+      rgba(255, 255, 255, 1) 0 87.5%,
+      rgba(0, 4, 255, 1) 0
+    );
+  }
+  48% {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 4, 255, 1) 0 12.5%,
+      rgba(255, 255, 255, 1) 0 25%,
+      rgba(255, 0, 0, 1) 0 37.5%,
+      rgba(255, 255, 255, 1) 0 50%,
+      rgba(0, 4, 255, 1) 0 62.5%,
+      rgba(255, 255, 255, 1) 0 75%,
+      rgba(255, 0, 0, 1) 0 87.5%,
+      rgba(255, 255, 255, 1) 0
+    );
+  }
+  56% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 1) 0 12.5%,
+      rgba(0, 4, 255, 1) 0 25%,
+      rgba(255, 255, 255, 1) 0 37.5%,
+      rgba(255, 0, 0, 1) 0 50%,
+      rgba(255, 255, 255, 1) 0 62.5%,
+      rgba(0, 4, 255, 1) 0 75%,
+      rgba(255, 255, 255, 1) 0 87.5%,
+      rgba(255, 0, 0, 1) 0
+    );
+  }
+  64% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 1) 0 12.5%,
+      rgba(255, 255, 255, 1) 0 25%,
+      rgba(0, 4, 255, 1) 0 37.5%,
+      rgba(255, 255, 255, 1) 0 50%,
+      rgba(255, 0, 0, 1) 0 62.5%,
+      rgba(255, 255, 255, 1) 0 75%,
+      rgba(0, 4, 255, 1) 0 87.5%,
+      rgba(255, 255, 255, 1) 0
+    );
+  }
+  72% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 1) 0 12.5%,
+      rgba(255, 0, 0, 1) 0 25%,
+      rgba(255, 255, 255, 1) 0 37.5%,
+      rgba(0, 4, 255, 1) 0 50%,
+      rgba(255, 255, 255, 1) 0 62.5%,
+      rgba(255, 0, 0, 1) 0 75%,
+      rgba(255, 255, 255, 1) 0 87.5%,
+      rgba(0, 4, 255, 1) 0
+    );
+  }
+  80% {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 4, 255, 1) 0 12.5%,
+      rgba(255, 255, 255, 1) 0 25%,
+      rgba(255, 0, 0, 1) 0 37.5%,
+      rgba(255, 255, 255, 1) 0 50%,
+      rgba(0, 4, 255, 1) 0 62.5%,
+      rgba(255, 255, 255, 1) 0 75%,
+      rgba(255, 0, 0, 1) 0 87.5%,
+      rgba(255, 255, 255, 1) 0
+    );
+  }
+  88% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 1) 0 12.5%,
+      rgba(0, 4, 255, 1) 0 25%,
+      rgba(255, 255, 255, 1) 0 37.5%,
+      rgba(255, 0, 0, 1) 0 50%,
+      rgba(255, 255, 255, 1) 0 62.5%,
+      rgba(0, 4, 255, 1) 0 75%,
+      rgba(255, 255, 255, 1) 0 87.5%,
+      rgba(255, 0, 0, 1) 0
+    );
+  }
+  100% {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 1) 0 12.5%,
+      rgba(255, 255, 255, 1) 0 25%,
+      rgba(0, 4, 255, 1) 0 37.5%,
+      rgba(255, 255, 255, 1) 0 50%,
+      rgba(255, 0, 0, 1) 0 62.5%,
+      rgba(255, 255, 255, 1) 0 75%,
+      rgba(0, 4, 255, 1) 0 87.5%,
+      rgba(255, 255, 255, 1) 0
+    );
+  }
 }
 
 .razor {
@@ -34,6 +211,11 @@
 
 .btn {
   cursor: pointer;
+  animation-name: btn;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
 }
 
 .btn:hover {

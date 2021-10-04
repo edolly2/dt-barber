@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 const NavContainer = styled.nav`
   width: 100%;
   display: flex;
+  // background: white;
+  padding: 3.2rem 0;
+  // position: relative;
+  // background-clip: "img";
 `;
 
 const NavList = styled.ul`
@@ -22,8 +26,11 @@ const SiteBrand = styled.div`
   height: auto;
   background-color: white;
   border-radius: 50%;
-  margin: 0 auto;
-  display: flex;
+  // margin: 0 auto;
+  // display: flex;
+  // position: absolute;
+  // left: 50%;
+  // transform: translate(-50%);
 `;
 
 const Navigation = () => {

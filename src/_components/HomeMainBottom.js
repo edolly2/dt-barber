@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `;
 
 const MainBottomContainer = styled.footer`
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -17,11 +17,11 @@ const MainBottomContainer = styled.footer`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 3.2rem;
+  // padding: 3.2rem;
 `;
 
 const SocialIconContainer = styled.div`
-  // margin: 0 6.3rem 3.2rem 0;
+  margin: 0 3.2rem 3.2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;

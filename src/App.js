@@ -9,18 +9,19 @@ import TeamPage from "./_pages/TeamPage";
 import ServicesPage from "./_pages/ServicesPage";
 
 const AppContent = styled.div`
-  min-width: 100vw
-  min-height: 100vh;
-  padding-bottom: 5rem;
+  width: 100%
+  height: 100%;
 `;
 
 const Overlay = styled.div`
   position: absolute;
   inset: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(2px);
+  // margin-bottom: -20rem;s
 `;
 
 function App() {
