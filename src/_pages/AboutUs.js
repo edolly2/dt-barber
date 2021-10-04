@@ -9,7 +9,7 @@ const AboutUsMainContainer = styled.div`
 const AboutUs = () => {
   return (
     <AboutUsMainContainer>
-      <PageTitle titleText="Our Rich History"></PageTitle>
+      <PageTitle titleText="Our History"></PageTitle>
     </AboutUsMainContainer>
   );
 };

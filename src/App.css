@@ -39,3 +39,54 @@
 .btn:hover {
   transform: scale(1.1, 1.1);
 }
+
+.img {
+  width: 25vw;
+  height: auto;
+}
+
+/* @media (min-width: 992px) {
+       .outer-border {/* @media (min-width: 768px) {
+    .corner-decoration {
+      width: 3.5em;
+      margin: -4px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .corner-decoration {
+      width: 4em;
+      margin: -5px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .corner-decoration {
+      width: 5em;
+      margin: -6px;
+    }
+  }
+  
+         height: 94%;
+       }
+   } */
+
+/* 
+   @media (min-width: 768px) {
+    .vertical-decoration {
+      width: 16em;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .vertical-decoration {
+      width: 20em;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .vertical-decoration {
+      width: 27em;
+    }
+  }
+   */
