@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
 }
 
 .App {
@@ -12,6 +12,13 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .icons {
   font-size: 4rem;
   color: white;
@@ -22,7 +29,7 @@ body {
 .icons:hover {
   transform: scale(1.1, 1.1);
 }
-
+/* 
 @keyframes btn {
   0% {
     background: linear-gradient(
@@ -193,7 +200,7 @@ body {
       rgba(255, 255, 255, 1) 0
     );
   }
-}
+} */
 
 .razor {
   width: 4rem;
@@ -202,20 +209,22 @@ body {
 }
 
 .links {
-  color: red;
+  color: #0000ff;
 }
 
 .links:hover {
   transform: scale(1.1, 1.1);
+  color: red;
 }
 
 .btn {
   cursor: pointer;
-  animation-name: btn;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
+  /* animation-name: btn;
   animation-duration: 3.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
 .btn:hover {

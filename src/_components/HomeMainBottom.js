@@ -8,6 +8,12 @@ const Wrapper = styled.div`
   gap: 1.6rem;
 `;
 
+const Wrapper2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  // gap: 1.6rem;
+`;
+
 const MainBottomContainer = styled.footer`
   position: relative;
   bottom: 0;
@@ -18,13 +24,24 @@ const MainBottomContainer = styled.footer`
   align-items: flex-end;
   justify-content: space-between;
   // padding: 3.2rem;
+  @media (max-width: 420px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SocialIconContainer = styled.div`
   margin: 0 3.2rem 3.2rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 420px) {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  }
 `;
 
 const MainLocation = styled.p`
@@ -48,16 +65,21 @@ const MainNumber = styled.p`
 const HomeMainBottom = () => {
   return (
     <MainBottomContainer>
-      <Hours />
       <SocialIconContainer>
-        <MainNumber title="Give Us a Call">402-697-1700</MainNumber>
-        <MainAddress title="Visit Us Today">1328 S 119th St.</MainAddress>
-        <MainLocation>Omaha, Nebraska</MainLocation>
-        <Wrapper>
-          <AiOutlineFacebook className="icons" title="Follow Us On Facebook" />
-          <FiTwitter className="icons" title="Follow Us On Twitter" />
-          <FiInstagram className="icons" title="Follow Us On Instagram" />
-        </Wrapper>
+        <Hours />
+        <Wrapper2>
+          <MainNumber title="Give Us a Call">402-697-1700</MainNumber>
+          <MainAddress title="Visit Us Today">1328 S 119th St.</MainAddress>
+          <MainLocation>Omaha, Nebraska</MainLocation>
+          <Wrapper>
+            <AiOutlineFacebook
+              className="icons"
+              title="Follow Us On Facebook"
+            />
+            <FiTwitter className="icons" title="Follow Us On Twitter" />
+            <FiInstagram className="icons" title="Follow Us On Instagram" />
+          </Wrapper>
+        </Wrapper2>
       </SocialIconContainer>
     </MainBottomContainer>
   );

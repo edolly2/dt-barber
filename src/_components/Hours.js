@@ -6,7 +6,11 @@ const HoursContainer = styled.div`
   padding: 0 1.6rem;
   background: rgba(255, 0, 0, 0.05);
   backdrop-filter: blur(10px);
-  margin: 0 0 3.2rem 3.3rem;
+  margin: 0 0 0 3.2rem;
+  border-radius: 0.8rem;
+  @media (max-width: 420px) {
+    margin: 0;
+  }
 `;
 
 const HoursTitle = styled.h3`

@@ -33,7 +33,8 @@ font-size: 4.8rem;
     1px -3px 1px red, -1px 3px 1px red,
     3px -1px 1px red, -1px -3px 1px red,
     -3px -1px 1px red;
-    font-family: 'Sancreek', cursive;
+    // font-family: 'Sancreek', cursive;
+    font-family: "Victorian";
     // border-top: 2px solid blue;
 
 }
@@ -46,6 +47,10 @@ font-size: 4.8rem;
     border-width: 0.05em 0;
     height: 0.2rem;
     margin: 0.8rem;
+  }
+
+  @media (max-width: 420px) {
+    text-align: center;
   }
 
 `;

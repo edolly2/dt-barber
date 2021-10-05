@@ -54,6 +54,8 @@ const AppointmentBtn = styled.button`
     rgba(0, 4, 255, 1) 0 87.5%,
     rgba(255, 255, 255, 1) 0
   );
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5)
+  overflow: hidden;
   z-index: 3;
 `;
 
@@ -66,7 +68,7 @@ const HomeMainContent = () => {
       </Wrapper>
       <Wrapper2>
         <AppointmentBtn className="btn" title="Make an Appointment">
-          Schedule Appointment Today
+          Schedule Appointment
         </AppointmentBtn>
       </Wrapper2>
     </MainContainer>
