@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import PageTitle from "../_components/PageTitle";
+import ContactMainContent from "../_components/ContactMainContent";
 
 const ContactPageContainer = styled.div`
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: 100%;
 `;
 
 const ContactPage = () => {
   return (
     <ContactPageContainer>
-      <PageTitle titleText="We Would Love To Hear From You!" />
+      <ContactMainContent />
     </ContactPageContainer>
   );
 };

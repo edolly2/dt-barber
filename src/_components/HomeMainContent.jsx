@@ -31,6 +31,9 @@ const MainSlogan = styled.h2`
   font-style: italic;
   border-bottom: 2px solid white;
   width: 50%;
+  @media (max-width: 420px) {
+    white-space: nowrap;
+  }
 `;
 
 const AppointmentBtn = styled.button`

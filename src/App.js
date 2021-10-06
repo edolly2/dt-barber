@@ -7,6 +7,7 @@ import HomePage from "./_pages/HomePage";
 import ContactPage from "./_pages/ContactPage";
 import TeamPage from "./_pages/TeamPage";
 import ServicesPage from "./_pages/ServicesPage";
+import { AiTwotoneDollar } from "react-icons/ai";
 
 const AppContent = styled.div`
   width: 100%
@@ -23,6 +24,9 @@ const Overlay = styled.div`
   backdrop-filter: blur(2px);
   // margin-bottom: -20rem;s
 `;
+
+// TODO: comments form on comment page;
+// TODO: review section on main and about us;
 
 function App() {
   return (
