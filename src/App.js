@@ -1,13 +1,15 @@
 import "./App.css";
-import styled from "styled-components";
-import Header from "./_components/Header";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
 import AboutUs from "./_pages/AboutUs";
-import HomePage from "./_pages/HomePage";
 import ContactPage from "./_pages/ContactPage";
-import TeamPage from "./_pages/TeamPage";
+import Header from "./_components/Header";
+import HomePage from "./_pages/HomePage";
+import PageTitle from "./_components/PageTitle";
 import ServicesPage from "./_pages/ServicesPage";
-import { AiTwotoneDollar } from "react-icons/ai";
+import TeamPage from "./_pages/TeamPage";
+import styled from "styled-components";
 
 const AppContent = styled.div`
   width: 100%

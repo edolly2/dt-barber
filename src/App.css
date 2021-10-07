@@ -1,5 +1,5 @@
 body {
-  /* font-family: "Roboto", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 .App {
@@ -232,8 +232,11 @@ body {
 }
 
 .img {
-  width: 25vw;
+  min-width: 300px;
+  max-width: 300px;
   height: auto;
+  /* position: relative; */
+  /* z-index: 1; */
 }
 
 /* @media (min-width: 992px) {
@@ -294,5 +297,5 @@ h2 {
     1px -2px 1px red, -2px 1px 1px red, 2px 1px 1px red, 1px 2px 1px red,
     1px 3px 1px red, 3px 1px 1px red, -3px 1px 1px red, 1px -3px 1px red,
     -1px 3px 1px red, 3px -1px 1px red, -1px -3px 1px red, -3px -1px 1px red;
-  font-family: "Victorian";
+  /* font-family: "Victorian"; */
 }

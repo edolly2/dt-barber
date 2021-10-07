@@ -1,11 +1,13 @@
-import styled from "styled-components";
 import Corner from "../_assets/corner-dec.png";
 import Vertical from "../_assets/vertical-dec.png";
+import styled from "styled-components";
 
 const OutterBorder = styled.div`
   border: 2px solid black;
   height: 99%;
   width: 98%;
+  // width: fit-content;
+  // height: fit-content;
   padding: 6px;
   margin: 0 auto;
   background: linear-gradient(
@@ -37,12 +39,15 @@ const MidBorder = styled.div`
 const InnerBorder = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
   border: 2px solid black;
   height: 100%;
   width: 100%;
+  padding-bottom: -200px;
   margin: auto;
+  // z-index: 2;
   background: linear-gradient(
     to right,
     #bf953f,

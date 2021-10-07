@@ -1,5 +1,6 @@
-import styled from "styled-components";
 import PageTitle from "../_components/PageTitle";
+import TeamMainContent from "../_components/TeamMainContent";
+import styled from "styled-components";
 
 const TeamPageContainer = styled.div`
   position: relative;
@@ -13,7 +14,7 @@ const TeamPageContainer = styled.div`
 const TeamPage = () => {
   return (
     <TeamPageContainer>
-      <PageTitle titleText="Meet Our Team" />
+      <TeamMainContent />
     </TeamPageContainer>
   );
 };

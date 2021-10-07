@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import PageTitle from "../_components/PageTitle";
+import Hp from "../_assets/hp.jpg";
 import Image1 from "../_assets/pexels-dmitry-zvolskiy-1570807.jpg";
 import Image2 from "../_assets/pexels-nick-demou-1319461.jpg";
-import Hp from "../_assets/hp.jpg";
 import ImgFrame from "../_components/ImgFrame";
+import PageTitle from "../_components/PageTitle";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const ServicesPageContainer = styled.div`
   position: relative;
   z-index: 1;
-  padding: 3.2rem;
+  // padding: 3.2rem;
 `;
 
 const ServicesTopImg = styled.div`
@@ -25,7 +25,6 @@ const ServicesTopImg = styled.div`
 `;
 
 const ImageTitle = styled.h2`
-  color: white;
   font-size: 3.2rem;
 `;
 
